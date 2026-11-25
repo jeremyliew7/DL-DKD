@@ -1,2 +1,19 @@
 /results
 **/__pycache__
+
+# Local environments, datasets, checkpoints and experiment output
+/.venv/
+/envs/
+/data/
+/datasets/
+/checkpoints/
+/runs/
+/logs/
+/.env
+/.env.*
+*.pyc
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
