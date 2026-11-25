@@ -14,6 +14,7 @@ class DLDKD(nn.Module):
     def __init__(self, config, opt):
         super(DLDKD, self).__init__()
         self.config = config
+        self.config.label_style = opt.label_style
         self.double_branch = opt.double_branch
 
         # inheritance query encoder

@@ -255,6 +255,8 @@ class Dataset4DLDKD(data.Dataset):
                 else:
                    
                     raise e
+            if clip_cap_feat.ndim == 1:
+                clip_cap_feat = clip_cap_feat[None, :]
             clip_cap_feat = torch.from_numpy(clip_cap_feat)
             # clip_cap_feat = torch.from_numpy(l2_normalize_np_array(clip_cap_feat))
             clip_cap_tensors.append(clip_cap_feat)
